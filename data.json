@@ -1,0 +1,73 @@
+{
+    "logo":"./img/logo.png",
+    "hamMenu":"./img/ham.png",
+    "closeHamMenu":"./img/x.png",
+    "name":"RichxDev",
+    "profession":"Estudiante de desarrollo de aplicaciones multiplataforma",
+    "aboutMe":"Soy una persona apasionada por el mundo de la programación y del desarrollo de aplicaciones",
+    "profilePicture":"./img/hasbulla.png",
+    "skills":[
+        {
+            "language":"Java",
+            "experience":"1 year",
+            "languagePhoto":"./img/languages/java.png"
+        },
+        {
+            "language":"HTML",
+            "experience":"1 year",
+            "languagePhoto":"./img/languages/html.png"
+        },
+        {
+            "language":"CSS",
+            "experience":"1 year",
+            "languagePhoto":"./img/languages/css.png"
+        },
+        {
+            "language":"JavaScript",
+            "experience":"1 year",
+            "languagePhoto":"./img/languages/javascript.png"
+        },
+        {
+            "language":"Python",
+            "experience":"2 years",
+            "languagePhoto":"./img/languages/python.webp"
+        },
+        {
+            "language":"MySQL",
+            "experience":"1 year",
+            "languagePhoto":"./img/languages/mysql.png"
+        }
+    ],
+    "projects":[
+        {
+            "projectName":"Portfolio antiguo",
+            "languagesUsed":"HTML, CSS y JS",
+            "projectIMG":"./img/projects/portfolio-antiguo.png",
+            "projectLink":"https://github.com/richxrd12/Portfolio-Antiguo"
+        },
+        {
+            "projectName":"Maquetación de página web",
+            "languagesUsed":"HTML y CSS",
+            "projectIMG":"./img/projects/examen2-lnd.png",
+            "projectLink":"https://github.com/richxrd12/Examen5-LND"
+        },
+        {
+            "projectName":"Proyecto de una carta NFT",
+            "languagesUsed":"HTML y CSS",
+            "projectIMG":"./img/projects/carta-nft.png",
+            "projectLink":"https://github.com/richxrd12/Frontend-Mentor-Proyecto-2"
+        },
+        {
+            "projectName":"Maquetación de página web sencilla",
+            "languagesUsed":"HTML y CSS",
+            "projectIMG":"./img/projects/examen1-lnd.png",
+            "projectLink":"https://github.com/richxrd12/Examen4-LND"
+        },
+        {
+            "projectName":"Ejemplo de Portfolio",
+            "languagesUsed":"HTML, CSS y JS",
+            "projectIMG":"./img/projects/ejemplo-portfolio.png",
+            "projectLink":"https://github.com/richxrd12/Examen6-LND"
+        }
+    ]
+}

@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    color: #1C3144;
+}
+
+html{
+    background-color: #a8a8a8 ;
+}
+
+h1{
+    font-size: 30px;
+    color: #1C3144;
+}
+
+.logo{
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 80px;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: end;
+    background-color: #1C3144;
+}
+
+ul{
+    display: none;
+}
+
+.menu-ham{
+    width: 50px;
+    margin-right: 10px;
+    display: block;
+}
+
+.menu-ham.activo{
+    display: none;
+}
+
+.menu-closed{
+    display: none;
+    width: 40px;
+}
+
+.menu-closed.activo{
+    display: block;
+    margin-right: 14px;
+}
+
+.lista-nav.activo{
+    position: absolute;
+    width: 10rem;
+    background-color: #1C3144;
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+li{
+    list-style-type: none;
+    margin-block: 1rem;
+    margin-left: 2rem;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+button{
+    background-color: #1C3144;
+    border: none;
+}
+
+@media(min-width:1200px) {
+    .menu-ham{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li{
+        margin-inline: 8rem;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 350px;
+    max-width: 650px;
+}
+
+#section-1 .profile-picture{
+    margin: 10rem 0 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+#section-1 h1{
+    margin: 20px 0;
+}
+
+#section-1 h3{
+    margin: 10px;
+}
+
+#section-1 p{
+    margin: 10px;
+}
+
+.skills div{
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1200px){
+    .skills{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+#section-2{
+    margin-top: 6rem;
+}
+
+#section-2 h1{
+    padding-top: 6rem;
+}
+
+#section-2 img{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: #1C3144;
+    border-radius: 50%;
+    margin: 2rem auto 0;
+}
+
+#section-2 h2{
+    margin: 0.5rem auto;
+}
+
+.projects{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.projects div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1200px){
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+}
+
+
+#section-3{
+    margin: 0 auto;
+}
+
+#section-3 h1{
+    margin: 6rem auto 3rem;
+}
+
+#section-3 img{
+    margin-block: 1rem;
+    max-width: 350px;
+}
+
+#section-3 h2{
+    margin-block: 10px;
+    max-width: 350px;
+    margin-inline: auto;
+}
+
+#section-3 p{
+    margin: 0.5rem auto 2rem;
+}
+
+#section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+footer{
+    background-color: #1C3144;
+}
+
+footer h1{
+    color: white;
+    padding-top: 6rem;
+}
+
+form{
+    width: 80%;
+    margin-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin: 0 auto;
+    min-width: 350px;
+    max-width: 650px;
+}
+
+label{
+    margin: 1rem;
+    color: white;
+}
+
+input{
+    width: 100%;
+}
+
+#info{
+    padding-bottom: 6rem;
+}
+
+form button{
+    color: white;
+    background-color: black;
+    margin: 3rem auto 10rem;
+    padding: 0.5rem;
+}

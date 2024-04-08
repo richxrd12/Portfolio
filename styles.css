@@ -149,10 +149,6 @@ section{
     }
 }
 
-#section-2{
-    margin-top: 6rem;
-}
-
 #section-2 h1{
     padding-top: 6rem;
 }
@@ -188,7 +184,6 @@ section{
         gap: 80px;
     }
 }
-
 
 #section-3{
     margin: 0 auto;

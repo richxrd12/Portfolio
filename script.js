@@ -119,7 +119,7 @@ function populateProjects(jsonObj) {
         projectDivElement.appendChild(projectNameElement);
         projectDivElement.appendChild(languagesUsedElement);
 
-        projectsDiv.appendChild(projectDivElement)
+        projectsDiv.appendChild(projectDivElement);
        
     }
 }
@@ -127,14 +127,52 @@ function populateProjects(jsonObj) {
 //Menú hamburguesa
 const buttonMenuHam = document.querySelector(".menu-button");
 
-buttonMenuHam.addEventListener('click', ()=>{
-    ul.classList.toggle('activo')
+buttonMenuHam.addEventListener('click', hamburguerMenu);
+
+function hamburguerMenu(){
+    ul.classList.toggle('activo');
 
     const menuHam = document.querySelector(".menu-ham");
-    menuHam.classList.toggle('activo')
+    menuHam.classList.toggle('activo');
 
     const closeHamMenu = document.querySelector(".menu-closed")
-    closeHamMenu.classList.toggle('activo')
-})
+    closeHamMenu.classList.toggle('activo');
+};
+
+//Validación de formulario
+
+let name = document.querySelector('#nombre');
+let email = document.querySelector('#email');
+let text = document.querySelector('#info');
+let warnings = document.querySelector('#form-warnings');
+let formSent = document.querySelector('#form-sent');
+
+const form = document.getElementById('form');
+
+const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+form.addEventListener("submit", e=>{
+    
+    e.preventDefault();
+    let warningsText = "";
+
+    if(name.value.length < 4){
+        warningsText += 'El nombre no es válido<br>'
+    }
+    if(!emailRegEx.test(email.value)){
+        warningsText += 'El email no es válido<br>'
+    }
+    if(text.value.length < 20){
+        warningsText += 'El texto no es válido'
+    }
+    warnings.innerHTML = warningsText;
+
+    //Cuando se haya enviado correctamente
+    if(warningsText.length === 0){
+        formSent.innerHTML = 'Se ha enviado correctamente';
+    }else{
+        formSent.innerHTML = '';
+    }
+});
 
 

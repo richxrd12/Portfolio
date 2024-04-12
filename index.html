@@ -49,17 +49,20 @@
 
     <footer id="section-4">
         <h1>Contacto</h1>
-        <form action="">
+        <form action="" id="form">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
+            <input type="text" id="nombre" required>
 
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input type="text" id="email" required>
 
             <label for="info">¿En qué puedo ayudarte?</label>
-            <input type="text" id="info">
+            <input type="text" id="info" required>
 
-            <button>Enviar formulario</button>
+            <button id="form-button">Enviar formulario</button>
+
+            <p id="form-warnings"></p>
+            <p id="form-sent"></p>
         </form>
     </footer>
     

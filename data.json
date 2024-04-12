@@ -68,6 +68,12 @@
             "languagesUsed":"HTML, CSS y JS",
             "projectIMG":"./img/projects/ejemplo-portfolio.png",
             "projectLink":"https://github.com/richxrd12/Examen6-LND"
+        },
+        {
+            "projectName":"Portfolio",
+            "languagesUsed":"HTML, CSS y JS",
+            "projectIMG":"./img/projects/portfolio-actual.png",
+            "projectLink":"https://github.com/richxrd12/richxrd12.github.io"
         }
     ]
 }

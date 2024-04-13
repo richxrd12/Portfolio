@@ -22,7 +22,6 @@ request.onload = function () {
 
 request.send();
 
-
 function populateNav(jsonObj){
     const myLogo = jsonObj.logo;
     const aLogoElement = document.createElement("a");
@@ -129,6 +128,9 @@ const buttonMenuHam = document.querySelector(".menu-button");
 
 buttonMenuHam.addEventListener('click', hamburguerMenu);
 
+let counter = 0;
+let hamOpened = false;
+
 function hamburguerMenu(){
     ul.classList.toggle('activo');
 
@@ -137,7 +139,37 @@ function hamburguerMenu(){
 
     const closeHamMenu = document.querySelector(".menu-closed")
     closeHamMenu.classList.toggle('activo');
+
+    counter++
+
+    if(counter === 1){
+        hamOpened = true;
+    }else{
+        hamOpened = false;
+        counter = 0;
+    }
 };
+
+addEventListener("resize", hamMenuCheck);
+
+function hamMenuCheck() {
+    let width = window.innerWidth;
+    
+    if(hamOpened){
+        if(width >= 1200){
+            hamOpened = false;
+            counter = 0;
+
+            ul.classList.toggle('activo');
+
+            const menuHam = document.querySelector(".menu-ham");
+            menuHam.classList.toggle('activo');
+
+            const closeHamMenu = document.querySelector(".menu-closed")
+            closeHamMenu.classList.toggle('activo');
+        }
+    }
+}
 
 //Validación de formulario
 
